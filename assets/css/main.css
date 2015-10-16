@@ -1314,9 +1314,9 @@
 /* Basic */
 
 	html {
-		background-color: #313a3d;
+		background-color: #0A0F1E;
 		background-attachment: fixed,						fixed;
-		background-image: url("images/overlay.png"), url("../../images/bench.jpg");
+		/*background-image: url("images/overlay.png"); , url("../../images/bench.jpg")*/
 		background-position: top left,					center center;
 		background-repeat: repeat,						none;
 		background-size: auto,						cover;
