@@ -1,0 +1,35 @@
+<html><head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Nate DeHorn's Website">
+	<meta name="author" content="Nate DeHorn">
+	<title>natedehorn</title>
+    <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+	<header class="center">
+		<span>
+			<img id="logo" src="images/logo.png">
+		</span>
+		<p id="loadtime">Page loaded in: 40ms</p>
+	</header>
+	<main>
+		<div id="leftside"></div>
+		<div id="rightside"></div>
+	</main>
+	<footer class="center">
+		<p><img class="icon" src="images/github.svg"> <img class="icon" src="images/linkedin.svg"> <img class="icon" src="images/mail.svg"></p>
+	</footer>
+	<script>
+		window.onload = function() {
+			setTimeout(function() {
+				//Get load time of page -- measures response end to onload end
+				var loadtime = window.performance.timing.loadEventEnd - window.performance.timing.responseEnd;
+				var out = "Page loaded in: " + loadtime + "ms";
+				document.getElementById("loadtime").innerHTML = out;
+			}, 0);
+		}
+	</script>
+</body></html>
