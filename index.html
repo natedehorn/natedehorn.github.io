@@ -7,22 +7,27 @@
 	<meta name="author" content="Nate DeHorn">
 	<title>natedehorn</title>
 	<link href="css/main.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Overpass+Mono" rel="stylesheet">
 </head>
-
 <body>
 	<header class="center">
 		<img id="logo" src="images/logo.png">
 	</header>
 	<main>
 		<section>
-			<div>
-				<span id="words"></span>
-			</div>
+			<a>Currently I am working as a programmer, helping to build airplanes at
+				<a href="http://www.boeing.com">Boeing</a>.
+				If you catch me at work, I'm probably whipping up C# or Javascript.
+				I also enjoy learning new technologies, fishing, modding RaspberryPis, and playing with my dog, Max
+				<a class="hover">🐶<img src="images/IMG_2288.JPG" class="hidden"></a>
+			</a>
 		</section>
-		<aside></aside>
+		<aside>
+			<div><strong>natedehorn.me$ whoami</strong></div>
+		</aside>
 	</main>
 	<footer class="center">
-		<div id="logos" class="center">
+		<div class="center">
 			<a href="https://github.com/natedehorn">
 				<img class="icon" src="images/github.svg">
 			</a>
@@ -35,7 +40,6 @@
 		</div>
 		<div id="loadtime"></div>
 	</footer>
-	<script src="js/main.js"></script>
 	<script>
 	window.onload = function() {
 		setTimeout(function() {
