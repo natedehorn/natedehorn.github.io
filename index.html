@@ -41,6 +41,7 @@
 		<div id="loadtime"></div>
 	</footer>
 	<script>
+	var start = new Date().getTime();
 	window.onload = function() {
 		setTimeout(function() {
 			window.performance = window.performance || window.mozPerformance
@@ -48,7 +49,7 @@
 			var timing = performance.timing || {};
 			//Get load time of page -- measures response end to onload end
 			document.getElementById("loadtime").innerHTML = "Page loaded in: "
-			+ (timing.loadEventEnd - timing.responseEnd) + "ms";
+			+ (start - timing.responseEnd) + "ms";
 		}, 0);
 	};
 	</script>
