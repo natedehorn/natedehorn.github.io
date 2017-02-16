@@ -3,12 +3,12 @@ html, body, h1, h2, h3, h4, h5, h6, div, p {
 	width: 								100%;
 	color: 								gray;
 	font-family: 					'Overpass Mono', monospace;
-	font-size:	1.75vh;
 }
 h1 { font-size:					5.0vh; }
 h2 { font-size: 				4.0vh; }
 h3 { font-size:					2.8vh; }
-a { text-decoration: 		none;}
+a { text-decoration: 		none; }
+
 a.hover:hover img{
 	top: 									50%;
 	left: 								50%;
@@ -22,10 +22,10 @@ header {
 	height: 							10vh;
 	display: 							flex;
 	outline: 							0.1vh solid lightgray;
-	margin-bottom: 				5vh;
+	margin-bottom: 				10vh;
 }
 main {
-	height: 							78vh;
+	height: 							73vh;
 	}
 	main section {
 		float: 							right;
