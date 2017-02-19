@@ -3,7 +3,7 @@ html *{
 	color: 								gray;
 	font-family: 					'Overpass Mono', monospace;
 	text-decoration: 			none;
-	font-size: 						1.8vmax;
+	font-size: 						1.5vh;
 	line-height: 					1.5;
 }
 body {
@@ -12,24 +12,24 @@ body {
 header {
 	position: 						absolute;
 	top: 									0;
-	height: 							10vmax;
-	width: 100%;
-	margin-bottom: 				5%;
+	height: 							10%;
+	width: 								100%;
 	outline: 							0.5vh solid lightgray;
 }
 main aside {
 	position: 						relative;
 	float: 								left;
 	width: 								45%;
-	margin:								10% 0;
+	margin:								15vh 0;
 	text-align: 					right;
 	white-space: 					nowrap;
 }
 main section {
 	float: 								right;
 	width: 								45%;
-	margin: 							10% 5%;
+	margin: 							15vh 5%;
 	text-align: 					left;
+	display: 							inline;
 }
 footer {
 	position: 						absolute;
@@ -37,7 +37,11 @@ footer {
 	height: 							10vh;
 	width: 								100%;
 	outline: 							0.5vh solid lightgray;
-	overflow: hidden;
+	overflow: 						hidden;
+}
+
+#loadtime {
+	margin-top: 					1vmin;
 }
 
 .hidden { display: 			none; }
@@ -48,12 +52,10 @@ footer {
 }
 .icon {
 	height: 							40%;
-	vertical-align: 			middle;
-	margin: 							5;
+	margin:								1vmin;
 }
 .logo {
-	height: 							100%;
-	width: 								10%;
+	height: 							90%;
 }
 .hover:hover img {
 	position: 						fixed;
