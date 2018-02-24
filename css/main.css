@@ -1,7 +1,10 @@
 html *{
 	margin:	0;
-	color: gray;
+	color: grey;
 	font-family: 'Anonymous Pro', monospace;
+}
+code {
+	border: 1px solid lightgrey;
 }
 .navbar-fixed-top {
     position: relative;
@@ -16,9 +19,32 @@ html *{
 	display: none;
 	margin-bottom: 50px;
 }
-.left {
-  text-align: right;
+.label {
+	color: darkgrey;
 }
-.navbar-fixed-bottom, .navbar-bottom{
-  text-align: center;
+.text_center {
+	text-align: center;
+}
+.pager{
+	display: none;
+	margin-bottom: 75px;
+}
+.img-responsive{
+	margin: 20px 0px;
+}
+.alert-fixed {
+    position:fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index:9999;
+    border-radius:0px
+}
+@media screen and (min-width: 768px){
+	.left {
+		text-align: right;
+	}
+	.right {
+	  text-align: left;
+	}
 }
