@@ -3,6 +3,9 @@ html *{
 	color: grey;
 	font-family: 'Anonymous Pro', monospace;
 }
+body{
+	overflow-y: scroll;
+}
 code {
 	border: 1px solid lightgrey;
 }
