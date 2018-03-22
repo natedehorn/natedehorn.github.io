@@ -3,7 +3,7 @@ html *{
 	color: grey;
 	font-family: 'Anonymous Pro', monospace;
 }
-body{
+body {
 	overflow-y: scroll;
 }
 code {
@@ -21,6 +21,9 @@ code {
 .post-content {
 	display: none;
 	margin-bottom: 50px;
+}
+.portfolio{
+	margin-bottom: 150px;
 }
 .label {
 	color: darkgrey;
