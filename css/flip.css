@@ -30,6 +30,16 @@
 
 .back {
 	transform: rotateY(180deg);
-	display: flex;
-	align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	width: 100%;
+}
+
+.card-body{
+	width: auto;
+}
+
+.card-body * {
+	text-align: center;
 }
