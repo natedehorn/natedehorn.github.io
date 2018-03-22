@@ -1,0 +1,35 @@
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+	transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+	min-height: 300px;
+	height: auto;
+	margin-top: 50px;
+}
+
+.flipper {
+	transition: 0.5s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+
+.front, .back {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.front {
+	z-index: 2;
+	transform: rotateY(0deg);
+	border: 1px solid lightgrey;
+	border-radius: 15px;
+}
+
+.back {
+	transform: rotateY(180deg);
+	display: flex;
+	align-items: center;
+}
