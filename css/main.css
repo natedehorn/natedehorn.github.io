@@ -12,10 +12,10 @@ code {
 .navbar-fixed-top {
     position: relative;
 }
-.blogpost{
+.post{
 	margin-bottom: 50px;
 }
-.blogpost:hover {
+.post:hover {
 	background:rgba(0, 0, 0, 0.05);
 }
 .post-content {
