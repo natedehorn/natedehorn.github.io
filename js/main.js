@@ -7,6 +7,7 @@ $(document).ready(function () {
   $('#eth code').click(function () {
     copyToClipboard($('#eth code'))
   })
+  $('#fish_sort').val('sort by...')
   $('#fish_sort').change(function () {
     sort($('#fish_sort'))
   })
