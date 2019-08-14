@@ -54,3 +54,11 @@ code {
 	  text-align: left;
 	}
 }
+#fish_header{
+	display: inline-block;
+	width: 100%;
+}
+#fish_sort{
+	float: right;
+	position: absolute;
+}

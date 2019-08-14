@@ -1,4 +1,5 @@
 /* global $:false */
+/* eslint no-fallthrough: "off" */
 $('.post').click(function () {
   $(this).children('.post-content').toggle()
 })
@@ -7,7 +8,41 @@ $(document).ready(function () {
   $('#eth code').click(function () {
     copyToClipboard($('#eth code'))
   })
+  $('#fish_sort')
+  $('#fish_sort').change(function () {
+    sort($('#fish_sort'))
+  })
 })
+
+function sort (element) {
+  switch (element.val()) {
+    case 'length':
+      console.log('length')
+      $('.post').sort(function (a, b) {
+        var aLength = $(a).find('.post-subtitle').text().split(' ')[0]
+        var bLength = $(b).find('.post-subtitle').text().split(' ')[0]
+        return aLength < bLength ? 1 : (aLength > bLength ? -1 : 0)
+      }).each(function () {
+        var elem = $(this)
+        elem.remove()
+        $(elem).appendTo('#fish_container')
+      })
+    case 'date':
+      $('.post').sort(function (a, b) {
+        var aDate = new Date($(a).find('h4:contains("date")').text().split(':')[1].trim())
+        var bDate = new Date($(b).find('h4:contains("date")').text().split(':')[1].trim())
+        return aDate < bDate ? 1 : (aDate > bDate ? -1 : 0)
+      }).each(function () {
+        var elem = $(this)
+        elem.remove()
+        $(elem).appendTo('#fish_container')
+      })
+    default:
+      $('.post').click(function () {
+        $(this).children('.post-content').toggle()
+      })
+  }
+}
 
 function copyToClipboard (element) {
   var $temp = $('<input>')
