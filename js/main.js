@@ -1,5 +1,4 @@
 /* global $:false */
-/* eslint no-fallthrough: "off" */
 $('.post').click(function () {
   $(this).children('.post-content').toggle()
 })
@@ -8,7 +7,6 @@ $(document).ready(function () {
   $('#eth code').click(function () {
     copyToClipboard($('#eth code'))
   })
-  $('#fish_sort')
   $('#fish_sort').change(function () {
     sort($('#fish_sort'))
   })
@@ -27,6 +25,7 @@ function sort (element) {
         elem.remove()
         $(elem).appendTo('#fish_container')
       })
+      break
     case 'date':
       $('.post').sort(function (a, b) {
         var aDate = new Date($(a).find('h4:contains("date")').text().split(':')[1].trim())
@@ -37,11 +36,11 @@ function sort (element) {
         elem.remove()
         $(elem).appendTo('#fish_container')
       })
-    default:
-      $('.post').click(function () {
-        $(this).children('.post-content').toggle()
-      })
+      break
   }
+  $('.post').click(function () {
+    $(this).children('.post-content').toggle()
+  })
 }
 
 function copyToClipboard (element) {
